@@ -1,7 +1,10 @@
 @font-face {
   font-family: Roboto-Bold;
-  font-family: Roboto-Regular;
   src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
   src: url(./fonts/Roboto-Regular.ttf);
 }
 
@@ -14,4 +17,61 @@ body {
 .Container {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+.News-box {
+  margin: auto;
+  width: 52vw;
+  height: 65vh;
+  background-color: #fff;
+  border-radius: 22.5px;
+  display: flex;
+  padding: 5px;
+}
+
+.Information-panel {
+  width: 45%;
+  margin: 30px 40px;
+  padding: 15px;
+}
+
+.Image-panel {
+  width: 55%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+}
+
+.Information-panel p1 {
+  font-family: Roboto-Bold;
+  color: #36384d;
+  font-size: 3.4em;
+  padding: 5px;
+}
+
+.Information-panel p {
+  font-family: Roboto-Regular;
+  color: #36384d;
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+  font-family: Roboto-Regular;
+  padding: 2px;
+}
+ul {
+  list-style-image: url("./images/icon-list.svg");
+  margin: 0;
+}
+
+.Desktop {
+  max-width: 100%;
+  height: auto;
 }
