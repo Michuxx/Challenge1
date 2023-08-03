@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Roboto-Bold;
+  font-family: Roboto-Regular;
+  src: url(./fonts/Roboto-Bold.ttf);
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #36384d;
+}
+
+.Container {
+  margin: 0;
+  padding: 0;
+}
