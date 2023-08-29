@@ -1,6 +1,6 @@
 import "./index.css";
-import { ReactComponent as Desktopillu } from "./images/illustration-sign-up-desktop.svg";
-import { ReactComponent as Mobileillu } from "./images/illustration-sign-up-mobile.svg";
+import Desktopillu from "./images/illustration-sign-up-desktop.svg";
+import Mobileillu from "./images/illustration-sign-up-mobile.svg";
 
 function App() {
   return (
@@ -33,11 +33,12 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="Image-panel">{<Desktopillu className="Desktop" />}</div>
-        <div className="Image-panel-mobile">{<Mobileillu />}</div>
+        <div className="Image-panel-desktop"><img src={Desktopillu} alt="" className="Desktop"/></div>
+        <div className="Image-panel-mobile"><img src={Mobileillu} alt=""  className="Mobile"/></div>
       </div>
     </div>
   );
 }
 
 export default App;
+
