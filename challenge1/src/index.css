@@ -27,7 +27,7 @@ body {
 .News-box {
   margin: auto;
   width: 52vw;
-  height: 65vh;
+  height: 100vh;
   background-color: #fff;
   border-radius: 22.5px;
   display: flex;
@@ -36,7 +36,7 @@ body {
 
 .Information-panel {
   width: 55%;
-  margin: 70px 40px;
+  margin: 30px 40px;
   padding: 15px;
 }
 
@@ -67,6 +67,7 @@ li {
 }
 ul {
   list-style-image: url("./images/icon-list.svg");
+  padding-inline-start: 1rem;
 }
 
 .Desktop {
@@ -79,14 +80,14 @@ ul {
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #a1a1a3;
-  width: 335px;
+  width: 90%;
   font-family: Roboto-Regular;
   font-size: 1rem;
 }
 
 .Subscripte-button {
   padding: 15px;
-  width: 367px;
+  width: 100%;
   background-color: #232742;
   color: #fff;
   border-radius: 5px;
@@ -109,13 +110,14 @@ ul {
   box-shadow: 5px 20px 30px pink;
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 800px) {
   .News-box {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 40%, 60%;
     width: 100%;
     height: 100%;
+
   }
 
   .Image-panel-desktop {
@@ -134,11 +136,14 @@ ul {
     display: initial;
     grid-column-start: 1;
     grid-row-start: 1;
+      
   }
 
   .Information-panel {
     grid-column-start: 1;
     grid-row-start: 2;
-    width: 100%;
+    width: 90%;
+    margin: 30px 10px;
+
   }
 }
