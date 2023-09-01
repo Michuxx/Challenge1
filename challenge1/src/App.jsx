@@ -27,8 +27,8 @@ function App() {
                 placeholder="email@company.com"
               />
               <br /> <br />
-              <button className="Subscripte-button">
-                Subscripe to monthly newsletter
+              <button className="Subscribe-button">
+                Subscribe to monthly newsletter
               </button>
             </div>
           </div>

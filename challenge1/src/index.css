@@ -74,6 +74,7 @@ ul {
   width: 100%;
   object-fit: cover;
   height: 100%;
+  border-radius: 22.5px;
 }
 
 .mail {
@@ -85,7 +86,7 @@ ul {
   font-size: 1rem;
 }
 
-.Subscripte-button {
+.Subscribe-button {
   padding: 15px;
   width: 100%;
   background-color: #232742;
@@ -105,7 +106,7 @@ ul {
   margin-top: 30px;
 }
 
-.Subscripte-button:hover {
+.Subscribe-button:hover {
   background: linear-gradient(to right, #fb5283, rgb(228, 153, 24));
   box-shadow: 5px 20px 30px pink;
 }
@@ -131,6 +132,7 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 22.5px;
   }
   .Image-panel-mobile {
     display: initial;
