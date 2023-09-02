@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './SuccessedApp-Style.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import SucccessedApp from './SuccessedApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <SucccessedApp />
   </React.StrictMode>
 );
 
