@@ -27,7 +27,6 @@ body {
 .News-box {
   margin: auto;
   width: 52vw;
-  height: 100vh;
   background-color: #fff;
   border-radius: 22.5px;
   display: flex;
@@ -111,6 +110,10 @@ ul {
   box-shadow: 5px 20px 30px pink;
 }
 
+
+.Login-panel{
+  padding-bottom: 30px;
+}
 @media screen and (max-width: 800px) {
   .News-box {
     display: grid;
