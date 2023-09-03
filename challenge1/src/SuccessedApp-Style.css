@@ -18,7 +18,7 @@
     border-radius: 22.5px;
     padding: 60px;
     width: 30vw;
-    margin-top: 10rem;
+    margin-top: 6rem;
 
   }
 
@@ -30,7 +30,7 @@
   }
 
   .TopicTextPanel{
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
 
   .InfoTextPanel span{
@@ -41,7 +41,7 @@
   }
 
   .InfoTextPanel{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   
   .SuccessedPanel-image{
