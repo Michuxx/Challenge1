@@ -4,9 +4,9 @@ import IconSuccessed from "./images/icon-success.svg";
 function SucccessedApp()
 {
     return (
-        <div className="Container">
+        <div className="ContainerApp">
             <div className="NewsBox-successed">
-                <div className="SuccessedPanel">
+                <div className="SuccessedPanel-image">
                     <img src={IconSuccessed} alt="" />
                 </div>
                 <div className="TopicTextPanel">

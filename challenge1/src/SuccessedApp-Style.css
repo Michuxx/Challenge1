@@ -1,8 +1,102 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+.ContainerApp{
+  display: flex;
+  justify-content: center;
+}
+
 .NewsBox-successed {
-    margin: auto;
     background-color: #fff;
     border-radius: 22.5px;
-    padding: 5px;
+    padding: 60px;
     width: 30vw;
+    margin-top: 10rem;
+
+  }
+
+  .TopicTextPanel span{
+    font-family: Roboto-Bold;
+    color: #36384d;
+    font-size: 3rem;
+      
+  }
+
+  .TopicTextPanel{
+    padding-bottom: 10px;
+  }
+
+  .InfoTextPanel span{
+    font-family: Roboto-Regular;
+    color: #36384d;
+    font-size: 1.5rem;
+    
+  }
+
+  .InfoTextPanel{
+    padding-bottom: 20px;
   }
   
+  .SuccessedPanel-image{
+    padding-bottom: 25px;
+  }
+
+  .ButtonsPanel{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Dissmiss-btn{
+    padding: 15px;
+  width: 100%;
+  background-color: #232742;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Roboto-Regular;
+  font-size: 1.1rem;
+  border: none;
+  }
+
+  .Dissmiss-btn:hover{
+    background: linear-gradient(to right, #fb5283, rgb(228, 153, 24));
+    box-shadow: 5px 20px 30px pink;
+    font-family: Roboto-Bold;
+
+  }
+
+  @media screen and (max-width:768px){
+    .NewsBox-successed{
+      width:92%;
+      height: 100%;
+      padding: 30px;
+      object-fit: cover;
+      margin: 0;
+    }
+
+    .SuccessedPanel-image{
+      padding-top: 140px;
+    }
+
+    .TopicTextPanel{
+      padding-bottom: 30px;
+    }
+
+    .InfoTextPanel span{
+      font-size: 1.3rem;
+    }
+
+    .ButtonsPanel{
+      padding-top: 140px;
+    }
+
+    .Dissmiss-btn{
+      padding: 20px;
+    }
+  }
