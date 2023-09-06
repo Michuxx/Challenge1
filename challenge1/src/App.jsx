@@ -2,8 +2,10 @@ import "./index.css";
 import Desktopillu from "./images/illustration-sign-up-desktop.svg";
 import Mobileillu from "./images/illustration-sign-up-mobile.svg";
 
+
 function App() {
   return (
+
     <div className="Container">
       <div className="News-box">
         <div className="Information-panel">
@@ -21,15 +23,17 @@ function App() {
               <p>Email address</p>
             </div>
             <div className="Login-panel">
-              <input
-                type="email"
-                className="mail"
-                placeholder="email@company.com"
-              />
-              <br /> <br />
-              <button className="Subscribe-button">
-                Subscribe to monthly newsletter
-              </button>
+              <form>
+                <input
+                  type="email"
+                  className="mail"
+                  placeholder="email@company.com"
+                />
+                <br /> <br />
+                <button className="Subscribe-button">
+                  Subscribe to monthly newsletter
+                </button>
+              </form>
             </div>
           </div>
         </div>
