@@ -19,7 +19,7 @@
     padding: 60px;
     width: 30vw;
     margin-top: 6rem;
-
+    box-shadow: 2px 2px 40px black;
   }
 
   .TopicTextPanel span{
