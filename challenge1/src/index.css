@@ -47,14 +47,15 @@ body {
   display: none;
 }
 
-.Information-panel p1 {
+.Information-panel h1 {
   font-family: Roboto-Bold;
   color: #36384d;
   font-size: 3.4em;
   padding: 5px;
+  display: inline;
 }
 
-.Information-panel p {
+.Text-box1 {
   font-family: Roboto-Regular;
   color: #36384d;
   font-size: 1rem;
@@ -81,7 +82,7 @@ ul {
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #a1a1a3;
-  width: 90%;
+  width: 94%;
   font-family: Roboto-Regular;
   font-size: 1rem;
 }
@@ -97,7 +98,13 @@ ul {
   border: none;
 }
 
-.valid-text p {
+.valid-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mailText {
   font-size: 12px;
   font-family: Roboto-Bold;
 }
@@ -111,10 +118,37 @@ ul {
   box-shadow: 5px 20px 30px pink;
 }
 
-
-.Login-panel{
+.Login-panel {
   padding-bottom: 30px;
+  width: 100%;
 }
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.invalidMail {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #e17970;
+  width: 94%;
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+  background-color: #ffe8e6;
+  color: #e17970;
+}
+
+.invalidMailText {
+  color: #e17970;
+  font-size: 12px;
+  font-family: Roboto-Bold;
+}
+
 @media screen and (max-width: 800px) {
   .News-box {
     display: grid;
@@ -122,7 +156,6 @@ ul {
     grid-template-rows: 40%, 60%;
     width: 100%;
     height: 100%;
-
   }
 
   .Image-panel-desktop {
@@ -132,7 +165,7 @@ ul {
     display: none;
   }
 
-  .Mobile{
+  .Mobile {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -142,7 +175,6 @@ ul {
     display: initial;
     grid-column-start: 1;
     grid-row-start: 1;
-      
   }
 
   .Information-panel {
@@ -150,6 +182,5 @@ ul {
     grid-row-start: 2;
     width: 90%;
     margin: 30px 10px;
-
   }
 }

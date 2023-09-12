@@ -1,15 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import './SuccessedApp-Style.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import SucccessedApp from './SuccessedApp';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./SuccessedApp-Style.css";
+import App from "./App";
+import SuccessedApp from "./SuccessedApp";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<App />} />
+        <Route path="successedApp" element={<SuccessedApp />} />
+      </Routes>
+    </BrowserRouter>
     {/* <SucccessedApp /> */}
   </React.StrictMode>
 );
