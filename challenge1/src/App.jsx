@@ -1,10 +1,10 @@
 import "./index.css";
 import Desktopillu from "./images/illustration-sign-up-desktop.svg";
 import Mobileillu from "./images/illustration-sign-up-mobile.svg";
+import SucccessedApp from "./SuccessedApp";
 
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Outlet, Link } from "react-router-dom";
 
 const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
@@ -62,9 +62,7 @@ function App() {
               </p>
               <p
                 id="uidnote"
-                className={
-                  userMail && !isMailValid ? "invalidMailText" : "offscreen"
-                }
+                className={!isMailValid ? "invalidMailText" : "offscreen"}
               >
                 Valid mail required
               </p>
