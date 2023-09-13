@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Challenge1/static/css/main.bdac42ef.css",
+    "main.js": "/Challenge1/static/js/main.48905f47.js",
+    "static/js/787.81217180.chunk.js": "/Challenge1/static/js/787.81217180.chunk.js",
+    "static/media/Roboto-Regular.ttf": "/Challenge1/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
+    "static/media/Roboto-Bold.ttf": "/Challenge1/static/media/Roboto-Bold.35eab922fdbe4b5324d4.ttf",
+    "static/media/illustration-sign-up-mobile.svg": "/Challenge1/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "static/media/illustration-sign-up-desktop.svg": "/Challenge1/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
+    "index.html": "/Challenge1/index.html",
+    "static/media/icon-success.svg": "/Challenge1/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "static/media/icon-list.svg": "/Challenge1/static/media/icon-list.5e317c030bb9f11a3343.svg",
+    "main.bdac42ef.css.map": "/Challenge1/static/css/main.bdac42ef.css.map",
+    "main.48905f47.js.map": "/Challenge1/static/js/main.48905f47.js.map",
+    "787.81217180.chunk.js.map": "/Challenge1/static/js/787.81217180.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdac42ef.css",
+    "static/js/main.48905f47.js"
+  ]
+}
