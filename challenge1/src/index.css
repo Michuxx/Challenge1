@@ -14,7 +14,7 @@ body {
   background-color: #36384d;
 }
 
-.Container {
+.container {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -24,7 +24,7 @@ body {
   align-items: center;
 }
 
-.News-box {
+.news-box {
   margin: auto;
   width: 52vw;
   background-color: #fff;
@@ -34,20 +34,20 @@ body {
   box-shadow: 2px 2px 40px black;
 }
 
-.Information-panel {
+.information-panel {
   width: 55%;
   margin: 30px 40px;
   padding: 15px;
 }
 
-.Image-panel-desktop {
+.image-panel-desktop {
   width: 45%;
 }
-.Image-panel-mobile {
+.image-panel-mobile {
   display: none;
 }
 
-.Information-panel h1 {
+.information-panel h1 {
   font-family: Roboto-Bold;
   color: #36384d;
   font-size: 3.4em;
@@ -55,7 +55,7 @@ body {
   display: inline;
 }
 
-.Text-box1 {
+.text-box1 {
   font-family: Roboto-Regular;
   color: #36384d;
   font-size: 1rem;
@@ -71,7 +71,7 @@ ul {
   padding-inline-start: 1rem;
 }
 
-.Desktop {
+.desktop {
   width: 100%;
   object-fit: cover;
   height: 100%;
@@ -82,12 +82,13 @@ ul {
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #a1a1a3;
-  width: 94%;
+  width: 100%;
+  box-sizing: border-box;
   font-family: Roboto-Regular;
   font-size: 1rem;
 }
 
-.Subscribe-button {
+.subscribe-button {
   padding: 15px;
   width: 100%;
   background-color: #232742;
@@ -109,16 +110,16 @@ ul {
   font-family: Roboto-Bold;
 }
 
-.Text-box2 {
+.text-box2 {
   margin-top: 30px;
 }
 
-.Subscribe-button:hover {
+.subscribe-button:hover {
   background: linear-gradient(to right, #fb5283, rgb(228, 153, 24));
   box-shadow: 5px 20px 30px pink;
 }
 
-.Login-panel {
+.login-panel {
   padding-bottom: 30px;
   width: 100%;
 }
@@ -136,7 +137,8 @@ ul {
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #e17970;
-  width: 94%;
+  width: 100%;
+  box-sizing: border-box;
   font-family: Roboto-Regular;
   font-size: 1rem;
   background-color: #ffe8e6;
@@ -150,7 +152,7 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
-  .News-box {
+  .news-box {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 40%, 60%;
@@ -158,27 +160,27 @@ ul {
     height: 100%;
   }
 
-  .Image-panel-desktop {
+  .image-panel-desktop {
     display: none;
   }
-  .Desktop {
+  .desktop {
     display: none;
   }
 
-  .Mobile {
+  .mobile {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 22.5px;
   }
-  .Image-panel-mobile {
+  .image-panel-mobile {
     display: initial;
     grid-column-start: 1;
     grid-row-start: 1;
   }
 
-  .Information-panel {
-    grid-column-start: 1;
+  .information-panel {
+  grid-column-start: 1;
     grid-row-start: 2;
     width: 90%;
     margin: 30px 10px;

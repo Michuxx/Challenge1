@@ -33,16 +33,16 @@ function App() {
     e.preventDefault();
     const isFormValid = validateForm();
     if (isFormValid) {
-      navigate("/successedApp", { replace: true });
+      navigate("/successedApp", { replace: true, state: {email:userMail}});
     }
   };
 
   return (
-    <div className="Container">
-      <div className="News-box">
-        <div className="Information-panel">
+    <div className="container">
+      <div className="news-box">
+        <div className="information-panel">
           <h1>Stay updated!</h1> <br></br>
-          <div className="Text-box1">
+          <div className="text-box1">
             <p>Join 60,000 product menagers receiving monthly updates on:</p>
             <ul>
               <li>Product menagers receiving what matters</li>
@@ -50,7 +50,7 @@ function App() {
               <li>And much more!</li>
             </ul>
           </div>
-          <div className="Text-box2">
+          <div className="text-box2">
             <div className="valid-text">
               <p className="mailText">Email address</p>
               <p
@@ -67,7 +67,7 @@ function App() {
                 Valid mail required
               </p>
             </div>
-            <div className="Login-panel">
+            <div className="login-panel">
               <form>
                 <input
                   type="text"
@@ -83,18 +83,18 @@ function App() {
                   onBlur={() => setUserMailFocus(false)}
                 />
                 <br /> <br />
-                <button onClick={handleSubmit} className="Subscribe-button">
+                <button onClick={handleSubmit} className="subscribe-button">
                   Subscribe to monthly newsletter
                 </button>
               </form>
             </div>
           </div>
         </div>
-        <div className="Image-panel-desktop">
-          <img src={Desktopillu} alt="" className="Desktop" />
+        <div className="image-panel-desktop">
+          <img src={Desktopillu} alt="" className="desktop" />
         </div>
-        <div className="Image-panel-mobile">
-          <img src={Mobileillu} alt="" className="Mobile" />
+        <div className="image-panel-mobile">
+          <img src={Mobileillu} alt="" className="mobile" />
         </div>
       </div>
     </div>

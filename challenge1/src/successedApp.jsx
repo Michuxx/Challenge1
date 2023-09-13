@@ -1,9 +1,11 @@
 import "./SuccessedApp-Style.css";
 import IconSuccessed from "./images/icon-success.svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SucccessedApp = () => {
   const navigate = useNavigate();
+  const {state} = useLocation();
+  console.log(state);
 
   const DissmissFunction = () => {
     navigate("/", { replace: true });
@@ -19,7 +21,7 @@ const SucccessedApp = () => {
         </div>
         <div className="InfoTextPanel">
           <span>
-            A confirmation email has been sent to <b></b>. Please open it and
+            A confirmation email has been sent to <b>{state.email}</b>. Please open it and
             click the button inside to confirm your subscription.
           </span>
         </div>
