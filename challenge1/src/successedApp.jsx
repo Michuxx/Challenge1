@@ -11,22 +11,22 @@ const SucccessedApp = () => {
     navigate("/", { replace: true });
   };
   return (
-    <div className="ContainerApp">
-      <div className="NewsBox-successed">
-        <div className="SuccessedPanel-image">
+    <div className="containerApp">
+      <div className="newsBox-successed">
+        <div className="successedPanel-image">
           <img src={IconSuccessed} alt="" />
         </div>
-        <div className="TopicTextPanel">
+        <div className="topicTextPanel">
           <span>Thanks for subscribing!</span>
         </div>
-        <div className="InfoTextPanel">
+        <div className="infoTextPanel">
           <span>
             A confirmation email has been sent to <b>{state.email}</b>. Please open it and
             click the button inside to confirm your subscription.
           </span>
         </div>
-        <div className="ButtonsPanel">
-          <button className="Dissmiss-btn" onClick={DissmissFunction}>
+        <div className="buttonsPanel">
+          <button className="dissmiss-btn" onClick={DissmissFunction}>
             {" "}
             Dissmiss message
           </button>

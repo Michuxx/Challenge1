@@ -8,12 +8,12 @@
   src: url(./fonts/Roboto-Regular.ttf);
 }
 
-.ContainerApp{
+.containerApp{
   display: flex;
   justify-content: center;
 }
 
-.NewsBox-successed {
+.newsBox-successed {
     background-color: #fff;
     border-radius: 22.5px;
     padding: 60px;
@@ -22,38 +22,38 @@
     box-shadow: 2px 2px 40px black;
   }
 
-  .TopicTextPanel span{
+  .topicTextPanel span{
     font-family: Roboto-Bold;
     color: #36384d;
     font-size: 3rem;
       
   }
 
-  .TopicTextPanel{
+  .topicTextPanel{
     padding-bottom: 30px;
   }
 
-  .InfoTextPanel span{
+  .infoTextPanel span{
     font-family: Roboto-Regular;
     color: #36384d;
     font-size: 1.5rem;
     
   }
 
-  .InfoTextPanel{
+  .infoTextPanel{
     padding-bottom: 40px;
   }
   
-  .SuccessedPanel-image{
+  .successedPanel-image{
     padding-bottom: 25px;
   }
 
-  .ButtonsPanel{
+  .buttonsPanel{
     display: flex;
     justify-content: center;
   }
 
-  .Dissmiss-btn{
+  .dissmiss-btn{
     padding: 15px;
   width: 100%;
   background-color: #232742;
@@ -64,7 +64,7 @@
   border: none;
   }
 
-  .Dissmiss-btn:hover{
+  .dissmiss-btn:hover{
     background: linear-gradient(to right, #fb5283, rgb(228, 153, 24));
     box-shadow: 5px 20px 30px pink;
     font-family: Roboto-Bold;
@@ -72,7 +72,7 @@
   }
 
   @media screen and (max-width:768px){
-    .NewsBox-successed{
+    .newsBox-successed{
       width:92%;
       height: 100%;
       padding: 30px;
@@ -80,23 +80,23 @@
       margin: 0;
     }
 
-    .SuccessedPanel-image{
+    .successedPanel-image{
       padding-top: 140px;
     }
 
-    .TopicTextPanel{
+    .topicTextPanel{
       padding-bottom: 30px;
     }
 
-    .InfoTextPanel span{
+    .infoTextPanel span{
       font-size: 1.3rem;
     }
 
-    .ButtonsPanel{
+    .buttonsPanel{
       padding-top: 140px;
     }
 
-    .Dissmiss-btn{
+    .dissmiss-btn{
       padding: 20px;
     }
   }
