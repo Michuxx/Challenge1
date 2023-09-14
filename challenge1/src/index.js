@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./SuccessedApp-Style.css";
 import App from "./App";
-import SuccessedApp from "./SuccessedApp";
+import SuccessedApp from "./successedApp";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,7 +13,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<App />} />
-        <Route path="successedApp" element={<SuccessedApp />} />
+        <Route path="SuccessedApp" element={<SuccessedApp />} />
       </Routes>
     </BrowserRouter>
     {/* <SucccessedApp /> */}

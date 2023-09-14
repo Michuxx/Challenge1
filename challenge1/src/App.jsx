@@ -1,7 +1,6 @@
 import "./index.css";
 import Desktopillu from "./images/illustration-sign-up-desktop.svg";
 import Mobileillu from "./images/illustration-sign-up-mobile.svg";
-import SucccessedApp from "./SuccessedApp";
 
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -33,7 +32,7 @@ function App() {
     e.preventDefault();
     const isFormValid = validateForm();
     if (isFormValid) {
-      navigate("/successedApp", { replace: true, state: {email:userMail}});
+      navigate("/successedApp", { replace: true, state: { email: userMail } });
     }
   };
 
