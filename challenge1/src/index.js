@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./SuccessedApp-Style.css";
 import App from "./App";
-import SuccessedApp from "./SuccessedApp";
+import SuccessedApp from "./successedApp";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, HashRouter, Route } from "react-router-dom";
 
