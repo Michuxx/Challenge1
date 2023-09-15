@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #36384d;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+.news-box {
+  margin: auto;
+  width: 52vw;
+  background-color: #fff;
+  border-radius: 22.5px;
+  display: flex;
+  padding: 5px;
+  box-shadow: 2px 2px 40px black;
+}
+
+.information-panel {
+  width: 55%;
+  margin: 30px 40px;
+  padding: 15px;
+}
+
+.image-panel-desktop {
+  width: 45%;
+}
+.image-panel-mobile {
+  display: none;
+}
+
+.information-panel h1 {
+  font-family: Roboto-Bold;
+  color: #36384d;
+  font-size: 3.4em;
+  padding: 5px;
+  display: inline;
+}
+
+.text-box1 {
+  font-family: Roboto-Regular;
+  color: #36384d;
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+  font-family: Roboto-Regular;
+  padding: 2px;
+}
+ul {
+  list-style-image: url("./images/icon-list.svg");
+  padding-inline-start: 1rem;
+}
+
+.desktop {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 22.5px;
+}
+
+.mail {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #a1a1a3;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+}
+
+.subscribe-button {
+  padding: 15px;
+  width: 100%;
+  background-color: #232742;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Roboto-Bold;
+  font-size: 14px;
+  border: none;
+}
+
+.valid-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mailText {
+  font-size: 12px;
+  font-family: Roboto-Bold;
+}
+
+.text-box2 {
+  margin-top: 30px;
+}
+
+.subscribe-button:hover {
+  background: linear-gradient(to right, #fb5283, rgb(228, 153, 24));
+  box-shadow: 5px 20px 30px pink;
+}
+
+.login-panel {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.invalidMail {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #e17970;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+  background-color: #ffe8e6;
+  color: #e17970;
+}
+
+.invalidMailText {
+  color: #e17970;
+  font-size: 12px;
+  font-family: Roboto-Bold;
+}
+
+@media screen and (max-width: 800px) {
+  .news-box {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40%, 60%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-panel-desktop {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22.5px;
+  }
+  .image-panel-mobile {
+    display: initial;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .information-panel {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 90%;
+    margin: 30px 10px;
+  }
+}

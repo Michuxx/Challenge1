@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+.containerApp {
+  display: flex;
+  justify-content: center;
+}
+
+.newsBox-successed {
+  background-color: #fff;
+  border-radius: 22.5px;
+  padding: 60px;
+  width: 30vw;
+  margin-top: 6rem;
+  box-shadow: 2px 2px 40px black;
+}
+
+.topicTextPanel span {
+  font-family: Roboto-Bold;
+  color: #36384d;
+  font-size: 3rem;
+}
+
+.topicTextPanel {
+  padding-bottom: 30px;
+}
+
+.infoTextPanel span {
+  font-family: Roboto-Regular;
+  color: #36384d;
+  font-size: 1.5rem;
+}
+
+.infoTextPanel {
+  padding-bottom: 40px;
+}
+
+.successedPanel-image {
+  padding-bottom: 25px;
+}
+
+.buttonsPanel {
+  display: flex;
+  justify-content: center;
+}
+
+.dissmiss-btn {
+  padding: 15px;
+  width: 100%;
+  background-color: #232742;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Roboto-Regular;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.dissmiss-btn:hover {
+  background: linear-gradient(to right, #fb5283, rgb(228, 153, 24));
+  box-shadow: 5px 20px 30px pink;
+  font-family: Roboto-Bold;
+}
+
+@media screen and (max-width: 768px) {
+  .newsBox-successed {
+    width: 92%;
+    height: 100%;
+    padding: 30px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .successedPanel-image {
+    padding-top: 140px;
+  }
+
+  .topicTextPanel {
+    padding-bottom: 30px;
+  }
+
+  .infoTextPanel span {
+    font-size: 1.3rem;
+  }
+
+  .buttonsPanel {
+    padding-top: 140px;
+  }
+
+  .dissmiss-btn {
+    padding: 20px;
+  }
+}
