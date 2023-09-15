@@ -3,19 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./SuccessedApp-Style.css";
 import App from "./App";
-import SuccessedApp from "./successedApp";
+import SuccessedApp from "./SuccessedApp";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, HashRouter, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route index element={<App />} />
         <Route path="SuccessedApp" element={<SuccessedApp />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     {/* <SucccessedApp /> */}
   </React.StrictMode>
 );
