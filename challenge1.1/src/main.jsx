@@ -4,6 +4,7 @@ import "./SuccessedApp-Style.css";
 import App from "./App";
 import SuccessedApp from "./successedApp";
 import { BrowserRouter, Routes, HashRouter, Route } from "react-router-dom";
+import "./App.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
